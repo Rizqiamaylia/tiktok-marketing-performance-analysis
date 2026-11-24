@@ -83,7 +83,8 @@ The analysis covered:
 ## Key Findings
 
 - The dataset contains 2,057 TikTok videos after data cleaning.
-- Total video views reached approximately 447 billion.
+- Total video views reached approximately 44.68 billion.
+- Total engagement reached approximately 3.46 billion interactions.
 - Average engagement rate was approximately 8.67%.
 - Zach King recorded the highest average views among the four creators analyzed.
 - MrBeast recorded the highest average engagement rate.
