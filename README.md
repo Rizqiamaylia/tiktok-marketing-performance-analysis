@@ -112,7 +112,7 @@ tiktok-marketing-performance-analysis/
 │   └── TikTok_Marketing_Performance_Dashboard.pbix
 │
 ├── notebooks/
-│   └── [Python Notebook].ipynb
+│   └── Tiktok_Marketing.ipynb
 │
 ├── sql/
 │   └── tiktok_analysis.sql
