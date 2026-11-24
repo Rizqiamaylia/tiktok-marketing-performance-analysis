@@ -4,15 +4,15 @@
 
 This project analyzes TikTok video performance to identify content engagement patterns, creator performance, and audience interaction trends.
 
-Using Python, SQL, and Power BI, this analysis explores video views, likes, comments, shares, saves, and engagement rates to generate meaningful insights into TikTok content performance.
+Using Python, SQL, and Power BI, the project examines video views, likes, comments, shares, saves, and engagement rates to uncover performance patterns and generate actionable insights.
 
 ## Project Objectives
 
-- Analyze overall TikTok video performance.
+- Evaluate overall TikTok video performance.
 - Identify creators with the highest average views and engagement rates.
-- Explore video performance based on upload days.
-- Understand audience engagement patterns.
-- Develop an interactive Power BI dashboard to communicate key findings.
+- Analyze video performance across different days of the week.
+- Examine audience engagement patterns through likes, comments, shares, and saves.
+- Develop an interactive Power BI dashboard to visualize performance metrics and communicate key findings.
 
 ## Dataset Description
 
