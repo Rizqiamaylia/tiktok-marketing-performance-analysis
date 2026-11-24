@@ -19,8 +19,8 @@ Using Python, SQL, and Power BI, the project examines video views, likes, commen
 The dataset was obtained from Hugging Face: `datahiveai/Tiktok-Videos`.
 
 Dataset overview:
-- Total records after cleaning: 2,057 videos
-- Number of original columns: 14
+- Total records after cleaning: 2,057 videos.
+- Number of original columns: 14.
 - Content: TikTok video metrics, creator information, descriptions, upload timestamps, and location data.
 
 Key attributes include:
@@ -45,14 +45,14 @@ Key attributes include:
 
 ## Data Cleaning & Preparation
 
-The following steps were performed:
+The following data preparation steps were performed:
 
-- Removed records with missing core engagement metrics.
-- Checked and removed duplicate records.
-- Handled invalid video duration values.
-- Handled missing video descriptions and location values.
-- Converted upload timestamps into datetime format.
-- Created additional metrics for engagement analysis.
+- Removed 3 records with missing core engagement metrics, resulting in 2,057 valid records.
+- Checked duplicate records based on video URLs and video IDs; no duplicates were found.
+- Handled invalid video duration values by replacing zero-duration values with missing values.
+- Filled missing video descriptions with "No Caption" and missing location values with "Unknown".
+- Converted upload timestamps into datetime format and extracted date-related features.
+- Created additional engagement metrics, including total engagement, engagement rate, like rate, comment rate, share rate, and save rate.
 
 ## Key Metrics
 
@@ -60,15 +60,20 @@ The following steps were performed:
 
 Likes + Comments + Shares + Saves
 
-**Engagement Rate**
+Represents the total number of interactions received by each video.
 
-(Total Engagement / Total Views) × 100%
+**Engagement Rate (ER)**
 
-Additional metrics:
-- Like Rate
-- Comment Rate
-- Share Rate
-- Save Rate
+(Total Engagement / Video Views) × 100%
+
+Measures the percentage of video views that resulted in interactions.
+
+**Additional Metrics**
+
+- **Like Rate:** (Likes / Video Views) × 100%
+- **Comment Rate:** (Comments / Video Views) × 100%
+- **Share Rate:** (Shares / Video Views) × 100%
+- **Save Rate:** (Saves / Video Views) × 100%
 
 ## Exploratory Data Analysis
 
@@ -106,7 +111,8 @@ The dashboard presents key performance indicators, creator comparisons, upload-d
 tiktok-marketing-performance-analysis/
 │
 ├── data/
-│   └── .gitkeep
+│   ├── .gitkeep
+│   └── tiktok_marketing_clean.csv
 │
 ├── dashboard/
 │   ├── .gitkeep
@@ -116,6 +122,7 @@ tiktok-marketing-performance-analysis/
 │   └── Tiktok_Marketing.ipynb
 │
 ├── sql/
+│   ├── .gitkeep
 │   └── tiktok_analysis.sql
 │
 ├── visualizations/
@@ -126,6 +133,7 @@ tiktok-marketing-performance-analysis/
 
 ## Project Files
 
+- **Cleaned Dataset:** Contains the cleaned TikTok video dataset used for analysis.
 - **Python Notebook:** Contains data cleaning, exploratory data analysis, and feature engineering.
 - **SQL Queries:** Contains SQL queries for TikTok performance analysis.
 - **Power BI Dashboard:** Interactive visualization of TikTok video performance.
